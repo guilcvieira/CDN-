@@ -1,12 +1,14 @@
 {
   "name": "cdn-react",
   "version": "1.0.0",
-  "scripts": {
-      },
+  "scripts": {},
   "devDependencies": {
     "@babel/cli": "^7.23.0",
     "@babel/core": "^7.23.0",
     "@babel/preset-react": "^7.23.0",
     "@babel/preset-typescript": "^7.23.0"
+  },
+  "dependencies": {
+    "@types/react-dom": "^19.1.1"
   }
 }

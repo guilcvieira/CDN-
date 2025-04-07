@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-export default function Soma(a: number, b: number) {
+export default function Soma({ a, b }: { a: number; b: number }) {
   return (
     <div className="soma">
       <h1>Soma</h1>
