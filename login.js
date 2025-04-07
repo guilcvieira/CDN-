@@ -1,4 +1,3 @@
-i
 import React, { useState } from 'https://esm.sh/react?dev';
 import { useAuth } from 'https://cdn-eight-iota.vercel.app/auth-context.js';
 
@@ -13,30 +12,28 @@ export const Login = () => {
   };
 
   return (
-    <div className="bg-white p-8 rounded-lg shadow-md w-96">
-      <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <input
-          type="email"
-          className="w-full p-2 border border-gray-300 rounded"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="password"
-          className="w-full p-2 border border-gray-300 rounded"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button
-          type="submit"
-          className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700"
-        >
-          Login
-        </button>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit} className="bg-white shadow-md rounded p-6 space-y-4">
+      <h2 className="text-xl font-semibold">Login</h2>
+      <input
+        type="email"
+        className="w-full border p-2 rounded"
+        placeholder="Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <input
+        type="password"
+        className="w-full border p-2 rounded"
+        placeholder="Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <button
+        type="submit"
+        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+      >
+        Entrar
+      </button>
+    </form>
   );
 };
