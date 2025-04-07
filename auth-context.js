@@ -1,5 +1,5 @@
-import React, { createContext, useContext, useState } from 'react';
-import { defaultUser } from './types.js';
+import React, { createContext, useContext, useState } from 'https://esm.sh/react?dev';
+import { defaultUser } from 'https://cdn-eight-iota.vercel.app/types.js';
 
 const AuthContext = createContext(null);
 
