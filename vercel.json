@@ -1,7 +1,15 @@
 {
     "cleanUrls": true,
-    "rewrites": [],
-    "redirects": [],
-    "headers": [],
-    "trailingSlash": false
-}
+    "headers": [
+      {
+        "source": "/(.*).js",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/javascript"
+          }
+        ]
+      }
+    ]
+  }
+  
