@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { useAuth } from "https://cdn-eight-iota.vercel.app/src/contexts/auth-context.tsx";
-import Input from "https://cdn-eight-iota.vercel.app/src/components/input.tsx";
+import { useAuth } from "https://cdn-eight-iota.vercel.app/src/contexts/auth-context.js";
+import Input from "https://cdn-eight-iota.vercel.app/src/components/input.js";
 import { createRoot } from "react-dom/client";
 
 export const Login = () => {
