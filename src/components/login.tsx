@@ -44,6 +44,8 @@ export const Login = () => {
 };
 
 window["loginComponent"] = ({ container }) => {
+  console.log("Login component loaded");
+  console.log("Container:", container);
   const elem = document.getElementById(container);
 
   if (!elem) {
