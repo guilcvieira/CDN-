@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useAuth } from 'https://cdn-eight-iota.vercel.app/auth-context.js';
-import Input from './input';
+import { useAuth } from 'https://cdn-eight-iota.vercel.app/components/auth-context.js';
+import Input from './input.js';
 
 export const Login = () => {
   const { login } = useAuth();
