@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import { useAuth } from '../contexts/auth-context.js';
-import Input from './input.js';
+import React, { useState } from "react";
+import { useAuth } from "../contexts/auth-context.tsx";
+import Input from "./input.tsx";
+import { createRoot } from "react-dom/client";
 
 export const Login = () => {
   const { login } = useAuth();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,7 +14,10 @@ export const Login = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white shadow-md rounded p-6 space-y-4">
+    <form
+      onSubmit={handleSubmit}
+      className="bg-white shadow-md rounded p-6 space-y-4"
+    >
       <h2 className="text-xl font-semibold">Login</h2>
       <Input
         type="email"
@@ -37,4 +41,16 @@ export const Login = () => {
       </button>
     </form>
   );
+};
+
+window["loginComponent"] = ({ container }) => {
+  const elem = document.getElementById(container);
+
+  if (!elem) {
+    console.error(`Container with id ${container} not found.`);
+    return;
+  }
+
+  const root = createRoot(elem);
+  root.render(<Login />);
 };
