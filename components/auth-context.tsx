@@ -1,10 +1,14 @@
-import React, { createContext, useContext, useState } from 'https://esm.sh/react?dev';
-import { defaultUser } from 'https://cdn-eight-iota.vercel.app/types.js';
+import React, { createContext, useContext, useState } from 'react';
+import { defaultUser } from '../types.js';
 
 const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({
+    ...defaultUser,
+    email: '',
+    password: '',
+  });
 
   const login = (userData) => {
     setUser(userData);

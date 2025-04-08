@@ -1,5 +1,6 @@
-import React, { useState } from 'https://esm.sh/react?dev';
+import React, { useState } from 'react';
 import { useAuth } from 'https://cdn-eight-iota.vercel.app/auth-context.js';
+import Input from './input';
 
 export const Login = () => {
   const { login } = useAuth();
@@ -14,14 +15,14 @@ export const Login = () => {
   return (
     <form onSubmit={handleSubmit} className="bg-white shadow-md rounded p-6 space-y-4">
       <h2 className="text-xl font-semibold">Login</h2>
-      <input
+      <Input
         type="email"
         className="w-full border p-2 rounded"
         placeholder="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
-      <input
+      <Input
         type="password"
         className="w-full border p-2 rounded"
         placeholder="Password"
