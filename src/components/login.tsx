@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useAuth } from ".https://cdn-eight-iota.vercel.app/contexts/auth-context.tsx";
+import { useAuth } from "https://cdn-eight-iota.vercel.app/contexts/auth-context.tsx";
 import Input from "https://cdn-eight-iota.vercel.app/components/input.tsx";
 import { createRoot } from "react-dom/client";
 
