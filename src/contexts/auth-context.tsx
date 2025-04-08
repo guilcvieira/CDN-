@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
-import { defaultUser } from './types.js';
+import { defaultUser } from '../types/types.js';
 
 const AuthContext = createContext(null);
 

@@ -2,7 +2,7 @@
     "cleanUrls": true,
     "headers": [
       {
-        "source": "/(.*).js",
+        "source": "/(.*).tsx",
         "headers": [
           {
             "key": "Content-Type",

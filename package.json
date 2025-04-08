@@ -1,9 +1,7 @@
 {
   "name": "cdn-react",
   "version": "1.0.0",
-  "scripts": {
-    "build": "babel components --out-dir public/components --extensions \".ts,.tsx\" --ignore \"**/*.d.ts\""
-  },
+
   "devDependencies": {
     "@babel/cli": "^7.23.0",
     "@babel/core": "^7.23.0",

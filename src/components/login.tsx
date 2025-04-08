@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useAuth } from 'https://cdn-eight-iota.vercel.app/components/auth-context.js';
+import { useAuth } from '../contexts/auth-context.js';
 import Input from './input.js';
 
 export const Login = () => {
