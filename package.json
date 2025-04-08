@@ -1,7 +1,15 @@
 {
   "name": "cdn-react",
   "version": "1.0.0",
-
+  "scripts": {
+    "build:components": "babel src/components --out-dir public/src/components --extensions \".ts,.tsx\" --ignore \"**/*.d.ts\"",
+    "build:contexts": "babel src/contexts --out-dir public/src/contexts --extensions \".ts,.tsx\" --ignore \"**/*.d.ts\"",
+    "build:types": "babel src/types --out-dir public/src/types --extensions \".ts,.tsx\" --ignore \"**/*.d.ts\"",
+    "build:hooks": "babel src/hooks --out-dir public/src/hooks --extensions \".ts,.tsx\" --ignore \"**/*.d.ts\"",
+    "build:utils": "babel src/utils --out-dir public/src/utils --extensions \".ts,.tsx\" --ignore \"**/*.d.ts\"",
+    "build:pages": "babel src/pages --out-dir public/src/pages --extensions \".ts,.tsx\" --ignore \"**/*.d.ts\"",
+    "build": "npm run build:components && npm run build:contexts && npm run build:hooks && npm run build:pages && npm run build:types && npm run build:utils"
+  },
   "devDependencies": {
     "@babel/cli": "^7.23.0",
     "@babel/core": "^7.23.0",
